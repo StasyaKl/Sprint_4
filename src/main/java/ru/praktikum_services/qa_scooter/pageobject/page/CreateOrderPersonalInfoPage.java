@@ -5,12 +5,12 @@ import org.openqa.selenium.WebDriver;
 import ru.praktikum_services.qa_scooter.pageobject.setup.BasePage;
 
 public class CreateOrderPersonalInfoPage extends BasePage {
-    private By inputName = By.xpath(".//input[@placeholder='* Имя']");
-    private By inputSecondName = By.xpath(".//input[@placeholder='* Фамилия']");
-    private By inputAddress = By.xpath(".//input[@placeholder='* Адрес: куда привезти заказ']");
-    private By select = By.xpath(".//input[@placeholder='* Станция метро']");
-    private By inputPhone = By.xpath(".//input[@placeholder='* Телефон: на него позвонит курьер']");
-    private By btnContinue = By.xpath(".//button[text()='Далее']");
+    private final By inputName = By.xpath(".//input[@placeholder='* Имя']");
+    private final By inputSecondName = By.xpath(".//input[@placeholder='* Фамилия']");
+    private final By inputAddress = By.xpath(".//input[@placeholder='* Адрес: куда привезти заказ']");
+    private final By select = By.xpath(".//input[@placeholder='* Станция метро']");
+    private final By inputPhone = By.xpath(".//input[@placeholder='* Телефон: на него позвонит курьер']");
+    private final By btnContinue = By.xpath(".//button[text()='Далее']");
 
 
     public CreateOrderPersonalInfoPage(WebDriver driver) {
